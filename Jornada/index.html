@@ -50,45 +50,57 @@
 
         <main class="container">
 
-            <div class="ofertas">
+            <section class="ofertas">
                 <div class="ofertas__titulo">
                     <div class="ofertas__titulo--texto">Ofertas de la semana</div>
                     <div class="ofertas__titulo--subrayado"></div>
                 </div>
-                <div class="ofertas__cards">
+                <section class="ofertas__cards">
                     <div class="ofertas__cards--grupo">
-                        <div class="ofertas__cards--elemento ofertas__cards--japon">
-                            <div class="ofertas__card">
+                        <article class="ofertas__cards--elemento ofertas__cards--japon">
+                            <div class="ofertas__card" aria-labelledby="card-japon-titulo">
                                 <div class="ofertas__card--contenido">
-                                    <div class="ofertas__card--destino">
-                                        <div class="ofertas__card--destino-tipo">HOTEL+AÉREO</div>
-                                        <b class="ofertas__card--destino-nombre">Japón</b>
-                                    </div>
-                                    <div class="ofertas__card--precio">$ 4000</div>
+                                    <!-- Tipo de oferta -->
+                                    <header class="ofertas__card--destino">
+                                        <p id="card-japon-tipo" class="ofertas__card--destino-tipo">HOTEL + AÉREO</p>
+                                        <h2 id="card-japon-titulo" class="ofertas__card--destino-nombre">Japón</h2>
+                                    </header>
+
+                                    <!-- Precio de la oferta -->
+                                    <div class="ofertas__card--precio" aria-label="Precio">$4000</div>
+
+                                    <!-- Enlace para ver detalles -->
                                     <div class="ofertas__card--boton">
-                                        <span class="ofertas__card--boton-texto">Ver detalles</span>
+                                        <a href="#detalles-japon" class="ofertas__card--boton-texto"
+                                            aria-labelledby="card-japon-titulo card-japon-tipo" role="button">
+                                            Ver detalles
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="ofertas__cards--elemento  ofertas__cards--san-andreas">
-                            <div class="ofertas__card">
+                        </article>
+
+                        <article class="ofertas__cards--elemento  ofertas__cards--san-andreas">
+                            <div class="ofertas__card" aria-labelledby="card-san-andreas-titulo">
                                 <div class="ofertas__card--contenido">
-                                    <div class="ofertas__card--destino">
-                                        <div class="ofertas__card--destino-tipo">HOTEL+AÉREO</div>
-                                        <b class="ofertas__card--destino-nombre">San Andreas</b>
-                                    </div>
-                                    <div class="ofertas__card--precio">$ 3000</div>
+                                    <header class="ofertas__card--destino">
+                                        <p class="ofertas__card--destino-tipo">HOTEL+AÉREO</p>
+                                        <h2 class="ofertas__card--destino-nombre">San Andreas</h2>
+                                    </header>
+                                    <div class="ofertas__card--precio" aria-label="Precio">$ 3000</div>
                                     <div class="ofertas__card--boton">
-                                        <span class="ofertas__card--boton-texto">Ver detalles</span>
+                                        <a href="#detalles-san-andreas" class="ofertas__card--boton-texto"
+                                            aria-labelledby="card-san-andreas-titulo card-san-andreas-tipo" role="button">
+                                            Ver detalles
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </article>
 
                     </div>
-                </div>
-            </div>
+                </section>
+            </section>
 
             <div class="busca">
                 <div class="busca__titulo">
